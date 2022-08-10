@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * new_help - help builtin command
- * @vars: if command matches a builtin name, text file is sent to stdout
- * Return: 0 if sucess
+ * new_help - help builtin command.
+ * @vars: if command matches a builtin name, text file is sent to stdout.
+ * Return: 0 if success.
  */
 
 void new_help(vars_t *vars)
@@ -41,9 +41,9 @@ void new_help(vars_t *vars)
 }
 
 /**
- * new_help_help - help builtin command help
- * @vars: if command matches a builtin name, text file is sent to stdout
- * Return: 0 if sucess
+ * new_help_help - help builtin command help.
+ * @vars: if command matches a builtin name, text file is sent to stdout.
+ * Return: 0 if success.
  */
 void new_help_help(vars_t *vars)
 {
@@ -80,9 +80,9 @@ void new_help_help(vars_t *vars)
 }
 
 /**
- * new_help_exit - help builtin command exit
- * @vars: if command matches a builtin name, text file is sent to stdout
- * Return: 0 if sucess
+ * new_help_exit - help builtin command exit.
+ * @vars: if command matches a builtin name, text file is sent to stdout.
+ * Return: 0 if success.
  */
 void new_help_exit(vars_t *vars)
 {
@@ -119,9 +119,9 @@ void new_help_exit(vars_t *vars)
 		new_help_cd(vars);
 }
 /**
- * new_help_cd - help builtin command cd
- * @vars: if command matches a builtin name, text file is sent to stdout
- * Return: 0 if sucess
+ * new_help_cd - help builtin command cd.
+ * @vars: if command matches a builtin name, text file is sent to stdout.
+ * Return: 0 if success.
  */
 void new_help_cd(vars_t *vars)
 {
@@ -158,9 +158,9 @@ void new_help_cd(vars_t *vars)
 		new_help_env(vars);
 }
 /**
- * new_help_env - help builtin command env
- * @vars: if command matches a builtin name, text file is sent to stdout
- * Return: 0 if sucess
+ * new_help_env - help builtin command env.
+ * @vars: if command matches a builtin name, text file is sent to stdout.
+ * Return: 0 if success.
  */
 void new_help_env(vars_t *vars)
 {

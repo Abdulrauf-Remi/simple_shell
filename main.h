@@ -126,14 +126,6 @@ void new_help_setenv(vars_t *vars);
 void new_help_alias(vars_t *vars);
 void new_help_else(vars_t *vars);
 
-/** FUNCTIONS FOR SETENV AND UNSETENV**/
-void new_setenv(vars_t *vars);
-void add_key(vars_t *vars);
-char *add_value(char *key, char *value);
-char **find_key(char **env, char *key);
-void setenv_cd(char **args, vars_t *vars);
-void chdir_to_env(vars_t *vars, char *str);
-
 /** ask the path **/
 void fork_child(vars_t vars);
 char *path_finder(vars_t vars, char *command);
@@ -141,6 +133,14 @@ int find_env_index(vars_t vars, char *str);
 char **tokenize_path(vars_t vars, int index, char *str);
 char *search_directories(char **path_tokens, char *command);
 char *build_path(char *directory, char *command);
+
+/**FUNCTIONS FOR SETENV AND UNSETENV**/
+void new_sentenv(vars_t *vars);
+void add_key(vars_t *vars);
+char *add_value(char *key, char *value);
+char **find_key(char **env, char *key);
+void chdir_to_env(vars_t *vars, char *str);
+void setenv_cd(char **args, vars_t *vars);
 
 /** More handle error messages**/
 void error_printing(char *av, int count, char *command);
@@ -155,8 +155,8 @@ void *add_nodeint(history_t **head, char *str);
 void free_listint(history_t *head);
 ssize_t _puts3(char *str);
 void print_message(char *str);
-/** handles signals**/
 
+/** handles signals**/
 void end_of_file(char *buffer);
 unsigned int sig_flag;
 #endif /* _SHELL_MAIN_ */

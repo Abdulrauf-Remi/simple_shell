@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * new_help_alias - help builtin command alias
- * @vars: if command matches a builtin name, text file is sent to stdout
- * Return: 0 if sucess
+ * new_help_alias - help builtin command alias.
+ * @vars: if command matches a builtin name, text file is sent to stdout.
+ * Return: 0 if success.
  */
 void new_help_alias(vars_t *vars)
 
@@ -41,9 +41,9 @@ void new_help_alias(vars_t *vars)
 		new_help_else(vars);
 }
 /**
- * new_help_else -error message if not command found
- * @vars: if command matches a builtin name, text file is sent to stdout
- * Return: 0 if sucess
+ * new_help_else -error message if not command found.
+ * @vars: if command matches a builtin name, text file is sent to stdout.
+ * Return: 0 if success.
  */
 
 void new_help_else(vars_t *vars)

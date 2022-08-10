@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * check_if_match - checks if a character matches any in a string
- * @c: character to check
- * @str: string to check
- * Return: 1 if match, 0 if not
+ * check_if_match - checks if a character matches any in a string.
+ * @c: character to check.
+ * @str: string to check.
+ * Return: 1 if match, 0 if not.
  */
 unsigned int check_if_match(char c, const char *str)
 {
@@ -18,10 +18,10 @@ unsigned int check_if_match(char c, const char *str)
 }
 
 /**
- * new_strtok - custom strtok
- * @str: string to tokenize
- * @delim: delimiter to tokenize against
- * Return: pointer to the next token or NULL
+ * new_strtok - custom strtok.
+ * @str: string to tokenize.
+ * @delim: delimiter to tokenize against.
+ * Return: pointer to the next token or NULL.
  */
 char *new_strtok(char *str, const char *delim)
 {

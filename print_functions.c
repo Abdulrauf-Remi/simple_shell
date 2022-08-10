@@ -3,8 +3,8 @@
 /*** PRINT WITOUTH USING PRINF AND ADDING NEWLINE AS NEEDED ***/
 /**
  * print_str - Prints a string character by character.
- * @str: String to be printed. If the string is NULL it will print (null)
- * @new_line: If integer is 0 a new line will be printed. Otherwise a new line
+ * @str: String to be printed. If the string is NULL it will print (null).
+ * @new_line: If integer is 0 a new line will be printed. Otherwise a new line.
  * will not be printed.
  */
 void print_str(char *str, int new_line)
@@ -21,8 +21,8 @@ void print_str(char *str, int new_line)
 
 /*** PRINT A SINGLE LETTER ***/
 /**
- * _write_char - Writes a character to stdout
- * @c: Character that will be written to stdout
+ * _write_char - Writes a character to stdout.
+ * @c: Character that will be written to stdout.
  * Return: Upon success how many characters were written.
  */
 int _write_char(char c)
@@ -32,9 +32,9 @@ int _write_char(char c)
 
 /*** PRINT EVERY DIGIT OF A NUMBER AS SINGLE CHARS ***/
 /**
- * print_number - Prints an unsigned number
- * @n: unsigned integer to be printed
- * Return: The amount of numbers printed
+ * print_number - Prints an unsigned number.
+ * @n: unsigned integer to be printed.
+ * Return: The amount of numbers printed.
  */
 int print_number(int n)
 {

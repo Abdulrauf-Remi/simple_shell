@@ -2,8 +2,8 @@
 
 /**
  * make_enviroment - make the shell environment from the environment.
- * @env: environment passed to main
- * Return: pointer to the new environment
+ * @env: environment passed to main.
+ * Return: pointer to the new environment.
  */
 char **make_enviroment(char **env)
 {
@@ -26,9 +26,9 @@ char **make_enviroment(char **env)
 }
 
 /**
- * free_env - free the shell's environment
- * @env: shell's environment
- * Return: void
+ * free_env - free the shell's environment.
+ * @env: shell's environment.
+ * Return: void.
  */
 void free_env(char **env)
 {
@@ -40,9 +40,9 @@ void free_env(char **env)
 }
 
 /**
- * chdir_to_env - go to the directory that points the adress of the
+ * chdir_to_env - go to the directory that points the adress of the.
  * the environment variable.
- * @vars: vars variable of struct vars_t
+ * @vars: vars variable of struct vars_t.
  * @str: name of env var to find.
  * Return: always return void.
  */

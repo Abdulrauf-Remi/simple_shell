@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * add_value - create a new environment variable string
- * @key: variable name
- * @value: variable value
- * Return: pointer to the new string;
+ * add_value - create a new environment variable string.
+ * @key: variable name.
+ * @value: variable value.
+ * Return: pointer to the new string.
  */
 
 char *add_value(char *key, char *value)
@@ -27,10 +27,10 @@ char *add_value(char *key, char *value)
 }
 
 /**
- * find_key - finds an environment variable
- * @env: array of environment variables
- * @key: environment variable to find
- * Return: pointer to address of the environment variable
+ * find_key - finds an environment variable.
+ * @env: array of environment variables.
+ * @key: environment variable to find.
+ * Return: pointer to address of the environment variable.
  */
 
 char **find_key(char **env, char *key)
@@ -52,9 +52,9 @@ char **find_key(char **env, char *key)
 }
 
 /**
- * add_key - create a new environment variable
- * @vars: pointer to struct of variables
- * Return: void
+ * add_key - create a new environment variable.
+ * @vars: pointer to struct of variables.
+ * Return: void.
  */
 void add_key(vars_t *vars)
 {

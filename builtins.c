@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * check_for_builtins - checks if the command is a builtin
- * @vars: variables
- * Return: pointer to the function or NULL
+ * check_for_builtins - checks if the command is a builtin.
+ * @vars: variables.
+ * Return: pointer to the function or NULL.
  */
 void (*check_for_builtins(vars_t *vars))(vars_t *vars)
 {
@@ -21,7 +21,7 @@ void (*check_for_builtins(vars_t *vars))(vars_t *vars)
 
 	for (i = 0; check[i].f != NULL; i++)
 	{
-		/** vars->array_tokens esta accediendo a los argumentos para el match */
+		/** vars->array_tokens is accessing the arguments for the match*/
 		if (_strcmpr(vars->array_tokens[0], check[i].name) == 0)
 			break;
 	}
@@ -31,27 +31,27 @@ void (*check_for_builtins(vars_t *vars))(vars_t *vars)
 }
 
 /**
- * new_exit - exit program
- * @vars: variables
- * Return: void
+ * new_exit - exit program.
+ * @vars: variables.
+ * Return: void.
  */
 void new_exit(vars_t *vars)
 {
 
 	int status;
-	/**Si exit tiene argumentos, lo manejamos*/
+	/**If exit has arguments, this handle it*/
 	if (_strcmpr(vars->array_tokens[0], "exit") ==
 			0 &&
 			vars->array_tokens[1] != NULL)
 
 	{
-		/* con esta funcion nos aseguramos que el numero ingresado sea valido*/
+		/* This fuction makes sure the entered number is valid*/
 		status = _atoi(vars->array_tokens[1]);
 		/* manejamos caso de error*/
 		if (status == -1)
 		{
 			vars->status = 2;
-			/*imprimira un mensaje de error */
+			/*Will print an error message*/
 			prints_error_msg(vars, ": Illegal number: ");
 			print_message(vars->array_tokens[1]);
 			print_message("\n");
@@ -94,7 +94,7 @@ void new_setenv(vars_t *vars)
 {
 	char **key;
 	char *var;
-	/** si los argumentos de setenv son errones imprimimos mensaje de error**/
+	/**if the arguments to sentenv are wrong this print the error message**/
 	if (vars->array_tokens[1] == NULL || vars->array_tokens[2] == NULL)
 	{
 
